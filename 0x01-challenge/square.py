@@ -1,21 +1,14 @@
 #!/usr/bin/python3
-'''
-Module defines Square class
-'''
+""" Module defines Square class """
 
 
 class Square():
-    """
-    Represents a gemetrical square
-    """
-
+    """ Represents a gemetrical square """
     width = 0
     height = 0
 
     def __init__(self, *args, **kwargs):
-        """
-        Initializes a square
-        """
+        """ Initializes a square """
         for key, value in kwargs.items():
             setattr(self, key, value)
 
